@@ -35,7 +35,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  flutter_inappwebview: ^5.8.0
+  flutter_inappwebview: ^6.0.0-beta.32
 
 dev_dependencies:
   flutter_test:
@@ -60,7 +60,12 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
+  assets:
+    - assets/www/testapp/dist/spa/
+    - assets/www/testapp/dist/spa/css/
+    - assets/www/testapp/dist/spa/fonts/
+    - assets/www/testapp/dist/spa/icons/
+    - assets/www/testapp/dist/spa/js/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
