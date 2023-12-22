@@ -33,7 +33,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   InAppWebViewController? webViewController;
   InAppWebViewSettings options = InAppWebViewSettings(
-      useShouldOverrideUrlLoading: true,
+      useShouldOverrideUrlLoading: false,
       mediaPlaybackRequiresUserGesture: false,
       javaScriptEnabled: true,
       useHybridComposition: true,
@@ -61,7 +61,8 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body:  InAppWebView(
         initialUrlRequest: URLRequest(url: WebUri("https://test.local.com/assets/flutter_assets/assets/www/testapp/dist/spa/index.html")),
-        initialSettings: options,
+        //initialUrlRequest: URLRequest(url: WebUri("https://mtrack.eu/?app=true&appNative=true")),
+          initialSettings: options,
         onWebViewCreated: (controller) {
           webViewController = controller;
         },
